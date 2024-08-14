@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SVGBuilder</title>
+
+  <link rel="icon" href="images/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+  <div id="nav">
+    <div id="icon">
+      <img src="images/icon.svg" id="nav-icon" style="max-width: 1500%;">
+      <a class="nav-button" href="#" style="margin-left: 2px; font-size: 24px">SVGBuilder</a>
+    </div>
+    <div>
+      <a class="nav-button" href="#home">Home</a>
+      <a class="nav-button" href="#abstract">Abstract</a>
+      <a class="nav-button" href="#colorsvg-100k">ColorSVG-100K</a>
+      <a class="nav-button" href="#output">Output</a>
+      <a class="nav-button" href="#code">Code</a>
+    </div>
+  </div>
+
+  <div id="home" style="position: absolute; top: 0;"></div>
+
+  <!-- banner -->
+  <div id="title">
+    <div id="title-wrapper">
+      <img src="images/icon.svg" id="title-icon">
+      <p id="title-text">SVGBuilder</p>
+    </div>
+    <p id="subtitle-text">
+      Component-Based Colored SVG Generation with <br>
+      Text-Guided Autoregressive Transformers
+      <br><br>
+      (Anonymous)
+    </p>
+    <p id="title-padding-bottom">&nbsp;</p>
+  </div>
+
+
+  <div id="body">
+    <div class="section">
+      <div id="abstract" class="anchor"></div>
+      <h1>Abstract</h1>
+      <img src="images/model.jpg" style="display: block; margin: 0 auto;">
+      <p>
+        Scalable Vector Graphics (SVG) are essential XML-based formats for versatile graphics, offering resolution independence and scalability. Unlike raster images, SVGs use geometric shapes and support interactivity, animation, and manipulation via CSS and JavaScript. Current SVG generation methods face challenges related to high computational costs and complexity. In contrast, human designers use component-based tools for efficient SVG creation. Inspired by this, SVGBuilder introduces a component-based, autoregressive model for generating high-quality colored SVGs from textual input. It significantly reduces computational overhead and improves efficiency compared to traditional methods. Our model generates SVGs up to 604 times faster than optimization-based approaches. To address the limitations of existing SVG datasets and support our research, we introduce ColorSVG-100K, the first large-scale dataset of colored SVGs, comprising 100,000 graphics. This dataset fills the gap in color information for SVG generation models and enhances diversity in model training. Evaluation against state-of-the-art models demonstrates SVGBuilder's superior performance in practical applications, highlighting its efficiency and quality in generating complex SVG graphics.
+      </p>
+    </div>
+
+    <div class="section">
+      <div id="colorsvg-100k" class="anchor"></div>
+      <h1>ColorSVG-100K Dataset</h1>
+      <p>❗️<strong>Download: </strong>the full dataset wiil be available after acceptance.</p>
+      <img src="images/build_dataset_process.jpg" style="display: block; margin: 0 auto;">
+
+      <h2>Dataset Construction</h2>
+      <p>The steps involved in constructing the dataset include:</p>
+      <ul>
+        <li>Data Collection</li>
+        <li>Data Cleaning</li>
+        <li>Remove <code>&lt;g&gt;</code> Tags</li>
+        <li>Normalization</li>
+        <li>Category Calibration</li>
+        <li>Dataset Partitioning</li>
+      </ul>
+
+      <h2>Dataset Statistics</h2>
+
+      <div style="display: flex; justify-content: space-between;">
+        <img src="images/category_counts_in_the_training_set.jpg" style="width: 50%;">
+        <img src="images/path_counts_in_the_training_set.jpg" style="width: 50%;">
+      </div>
+
+      <p>ColorSVG-100K contains:</p>
+      <ul>
+        <li>100K samples</li>
+        <li>500 categories</li>
+      </ul>
+
+      <h2>Dataset Examples</h2>
+      <img src="images/dataset_examples.jpg" style="display: block; margin: 0 auto;">
+    </div>
+
+    <div class="section">
+      <div id="output" class="anchor"></div>
+      <h1>Output</h1>
+      <img src="images/partially_generated_results.jpg" style="display: block; margin: 0 auto;">
+    </div>
+
+    <div class="section">
+      <div id="code" class="anchor"></div>
+      <h1>Code</h1>
+      <p>The full code will be available after acceptance.</p>
+    </div>
+  </div>
+
+  <div id="footer" style="font-size: 12pt">
+    SVGBuilder
+  </div>
+</body>
+
+</html>
